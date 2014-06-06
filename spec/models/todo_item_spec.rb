@@ -1,5 +1,5 @@
 require 'spec_helper'
 
 describe TodoItem do
-  it { should have_many{:todo_items} }
+  it { should belong_to(:todo_list) }
 end
